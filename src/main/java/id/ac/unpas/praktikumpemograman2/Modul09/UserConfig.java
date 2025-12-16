@@ -1,0 +1,48 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package id.ac.unpas.praktikumpemograman2.Modul09;
+
+// Latihan 3
+import java.io.Serializable;
+
+/**
+ *
+ * @author Narita Risnawati
+ */
+public class UserConfig implements Serializable {
+    private String username;
+    private int fontsize;
+    
+    // Latihan 3
+    public UserConfig() {}
+
+    // Latihan 3
+    public UserConfig(String username, int fontsize) {
+        this.username = username;
+        this.fontsize = fontsize;
+    }
+    
+    public String getUsername() {
+        return username;
+    }
+    
+    public void setUsername(String username) {
+        this.username = username;
+    }
+    
+    public int getFontSize() {
+        return fontsize;
+    }
+    
+    public void setFontsize(int fontsize) {
+        this.fontsize = fontsize;
+    }
+    
+    // Latihan 3
+    @Override
+    public String toString() {
+        return "UserConfig{username='" + username + "', fontSize=" + fontsize + "}";
+    }
+}
